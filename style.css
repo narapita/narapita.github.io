@@ -1,0 +1,17 @@
+:root{--brown:#C8783A;--green:#4FA82E;--ink:#4A3B32;--sub:#7A6A60;--bg:#FFF8EC;--card:#FFFFFF;--line:#F0E2CC}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","ヒラギノ角ゴ ProN W3","Noto Sans JP","Yu Gothic",sans-serif;line-height:1.8;font-size:16px}
+header{background:var(--brown);color:#fff;text-align:center;padding:28px 16px 22px}
+header h1{margin:0;font-size:24px;font-weight:700}
+header p{margin:4px 0 0;font-size:14px;opacity:.9}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+section{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:18px 20px;margin:0 0 16px}
+h2{font-size:18px;margin:0 0 8px;color:var(--brown)}
+h3{font-size:16px;margin:14px 0 4px}
+ul{padding-left:1.3em;margin:6px 0}
+a{color:#2F7FD6}
+.mail{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:999px;margin-top:6px}
+.small{font-size:13px;color:var(--sub)}
+footer{text-align:center;font-size:13px;color:var(--sub);padding:0 16px 32px}
+nav{text-align:center;margin:0 0 16px}
+nav a{margin:0 8px;font-size:14px}
