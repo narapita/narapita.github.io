@@ -116,7 +116,7 @@ a{color:#2F7FD6}
 
 /* 作者 */
 .author{display:flex;gap:18px;align-items:flex-start}
-.author .avatar{flex:0 0 72px;height:72px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-size:36px;box-shadow:0 4px 0 #D4A800}
+.author .avatar{flex:0 0 96px;width:96px;height:96px;border-radius:50%;border:4px solid #fff;box-shadow:0 4px 0 #D4A800,0 0 0 3px var(--yellow);object-fit:cover}
 @media (max-width:560px){.author{flex-direction:column}}
 
 /* お知らせ・ブログ一覧 */
