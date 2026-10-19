@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#4FA82E">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site-header">
@@ -59,17 +59,17 @@
       <div class="card step"><span class="num">1</span>
         <h3>盛土（高いマス）を見つける</h3>
         <p>数字はマスの高さ。計画高より高いマスは、土が余っています。</p>
-        <div class="mini-board" aria-hidden="true"><span class="mb-ok">3</span><span class="mb-h">4</span><span class="mb-ok">3</span><span class="mb-l">2</span><span class="mb-ok">3</span><span class="mb-ok">3</span></div>
+        <div class="mb-wrap" aria-hidden="true"><div class="mini-board"><span class="mb-ok">3<small>✓</small></span><span class="mb-h">4<small>+1</small></span><span class="mb-l">2<small>-1</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span></div></div>
       </div>
       <div class="card step"><span class="num">2</span>
         <h3>となりの窪みへ運ぶ</h3>
         <p>高いマスの土を、となりの低いマスへ。スコップや重機で運びます。</p>
-        <div class="mini-board" aria-hidden="true"><span class="mb-ok">3</span><span class="mb-ok">3</span><span class="mb-ok">3</span><span class="mb-l">2</span><span class="mb-h">4</span><span class="mb-ok">3</span></div>
+        <div class="mb-wrap" aria-hidden="true"><div class="mb-board-box"><svg class="mb-arrow" viewBox="0 0 138 44" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E03A2F"/></marker></defs><path d="M66 42 Q92 -14 114 36" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M66 42 Q92 -14 114 36" fill="none" stroke="#E03A2F" stroke-width="4" stroke-linecap="round" marker-end="url(#ah)"/></svg><div class="mini-board"><span class="mb-ok">3<small>✓</small></span><span class="mb-h mb-from">4<small>+1</small></span><span class="mb-l mb-to">2<small>-1</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span></div></div></div>
       </div>
       <div class="card step"><span class="num">3</span>
         <h3>全部そろえば施工完了！</h3>
         <p>すべてのマスを計画高に。目標どおりの手数なら★3パーフェクト！</p>
-        <div class="mini-board" aria-hidden="true"><span class="mb-ok">3</span><span class="mb-ok">3</span><span class="mb-ok">3</span><span class="mb-ok">3</span><span class="mb-ok">3</span><span class="mb-ok">3</span></div>
+        <div class="mb-wrap" aria-hidden="true"><div class="mini-board"><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span><span class="mb-ok">3<small>✓</small></span></div></div>
       </div>
     </div>
     <div class="levels"><span style="background:#7CCB55">3×3 EASY</span><span style="background:#4DA3F0">4×4 NORMAL</span><span style="background:#F2A93B">5×5 HARD</span><span style="background:#E0564A">6×6 EXPERT</span><span style="background:#8B6CF0">7×7 MASTER</span></div>
