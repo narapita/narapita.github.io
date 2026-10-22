@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ランキングの「審査」を、うっかり忘れていた話｜ならピタ（ならしてピッタリ！）</title>
+<meta name="description" content="配信初日、ランキングを開くとエラー。原因は、ランキング本体を審査に出し忘れていたことでした。気づいてから直すまでをまとめます。">
+<link rel="canonical" href="https://narapita.github.io/blog/ranking-review.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ならピタ（ならしてピッタリ！）">
+<meta property="og:title" content="ランキングの「審査」を、うっかり忘れていた話｜ならピタ（ならしてピッタリ！）">
+<meta property="og:description" content="配信初日、ランキングを開くとエラー。原因は、ランキング本体を審査に出し忘れていたことでした。気づいてから直すまでをまとめます。">
+<meta property="og:url" content="https://narapita.github.io/blog/ranking-review.html">
+<meta property="og:image" content="https://narapita.github.io/img/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6821931379">
+<meta name="theme-color" content="#4FA82E">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css?v=3">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href=".././"><img src="../img/favicon.png" alt="" width="36" height="36">ならピタ</a>
+    <nav class="gnav" aria-label="メニュー"><a href=".././">ホーム</a><a href="../news.html">お知らせ・更新履歴</a><a href="../blog/" aria-current=page>開発ブログ</a><a href="../support.html">サポート</a><a href="../privacy.html">プライバシー</a></nav>
+  </div>
+</header>
+<main>
+
+<div class="page-body">
+  <article class="card post">
+    <p style="margin:0"><a href="./">← 開発ブログ一覧</a></p>
+    <h1>ランキングの「審査」を、うっかり忘れていた話</h1>
+    <p class="meta"><time datetime="2026-10-22">2026.10.22</time>　管理者PAPA</p>
+    
+<p>10月20日、ついに「ならピタ」の配信が始まりました。ダウンロードしてくださった皆さん、本当にありがとうございます！……と喜んだのもつかの間、さっそく自分でやらかしていたことに気づきました。</p>
+<h2>配信初日、ランキングがエラーに</h2>
+<p>公開されたアプリを自分の iPhone に入れて、ランキングの画面を開いてみると「ランキングを読み込めませんでした」の表示。日給 TOP100 も、現場別タイムも、どれを開いてもエラーです。</p>
+<p>電波のせいかと思って何度か再読み込みしましたが、変わりません。せっかく遊んでくださった方にもこの画面を見せてしまっていたと思うと、申し訳ない気持ちでいっぱいでした。</p>
+<h2>原因は「審査に出し忘れ」</h2>
+<p>ならピタのランキングは、Apple の Game Center という仕組みを使っています。ランキングは「日給」が2つと「現場ごとの最速タイム」が250個、あわせて252個。数が多いので、難易度ごとの「セット」にまとめています。</p>
+<p>App Store Connect（アプリを管理する Apple の画面）を確認してみると、セットのほうは「配信中」になっているのに、中に入っているランキングは252個とも「提出準備中」のまま。<b>箱だけ審査に出して、中身を出し忘れていた</b>のです。中身が審査を通っていないので、本番のランキングには何も無い。アプリから見ると「ランキングが見つかりません」となっていました。</p>
+<h2>直すのにも、ひと手間</h2>
+<p>「じゃあ今から審査に出そう」と思ったら、もうひとつ壁がありました。初めて審査に出すランキングは、アプリの新しいバージョンと一緒でないと提出できないのです。</p>
+<p>そこで、もともと次のバージョンで直す予定だった「App Store の言語表示が英語になっている」点の修正もあわせて、バージョン 1.0.1 を作りました。</p>
+<p>さらに、1回の審査で提出できるのは最大200項目まで。セットごとまとめて追加する方法は見つからず、ランキングを1つ開いては「審査用に追加」、戻って次の1つを開いては「審査用に追加」……。アプリ本体とランキング199個、200項目ちょうどになるまで、<b>約1時間、コツコツ手作業でクリックし続けました</b>。現場の地道な作業を思い出しながらの1時間でした。</p>
+<h2>そして、ランキングが動いた！</h2>
+<p>10月21日、1.0.1 が無事に審査を通りました。アップデートしてランキングを開くと、今度はちゃんと表示されます。App Store の「言語」も、日本語になりました。</p>
+<h2>ただし、まだ全部ではありません</h2>
+<p>200項目の上限があったため、今回は全部のランキングを出しきれませんでした。次の現場のランキングは、<b>まだ使えない状態</b>です。</p>
+<ul>
+<li>6×6（EXPERT）の現場48〜50</li>
+<li>7×7（MASTER）の全50現場</li>
+</ul>
+<p>これらの現場でも、ゲーム自体はふつうに遊べますし、自己ベストのタイムもアプリの中に記録されます。ランキングが使えるようになったら、アプリを起動したときに、それまでの自己ベストもまとめて送られる仕組みです。残りのランキングは審査に出す準備ができているので、通りしだい使えるようになります。上級者の皆さん、ご迷惑をおかけしますが、もう少しだけお待ちください。</p>
+<h2>わかったこと</h2>
+<ul>
+<li>Game Center は「セット」と「ランキング本体」の両方が審査に通って、はじめて使えるようになる</li>
+<li>初めて出すランキングは、アプリのバージョンと一緒に提出する</li>
+<li>1回の審査で出せるのは200項目まで。数が多いときは分けて出す</li>
+</ul>
+<p>テストのときは開発用の環境でランキングが動いていたので、すっかり安心していました。「テストで動いた」と「本番で動く」は別もの、と身にしみた出来事です。これから Game Center を使う方は、提出前に一度、ランキング本体の状態も確認してみてください。</p>
+    <div class="post-nav"><span></span><a href="app-review.html">App Store の審査で、2回つまずいた話 →</a></div>
+  </article>
+</div>
+
+</main>
+<div class="hazard" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav class="fnav"><a href=".././">ホーム</a><a href="../news.html">お知らせ・更新履歴</a><a href="../blog/" aria-current=page>開発ブログ</a><a href="../support.html">サポート</a><a href="../privacy.html">プライバシー</a><a href="mailto:narashite.pittari@gmail.com">お問い合わせ</a></nav>
+    <p class="credit">企画・開発：管理者PAPA、Claude（Anthropic）／アイデア・テストプレイ：ゆなぴ<br>
+    BGM：<a href="https://maou.audio/" target="_blank" rel="noopener">魔王魂</a>「8bit29」／音声：<a href="https://voicevox.hiroshiba.jp/" target="_blank" rel="noopener">VOICEVOX</a>：ずんだもん、四国めたん、春日部つむぎ<br>
+    Apple、App Store、Game Center、iPhone、iPad は Apple Inc. の商標です。</p>
+    <p class="small" style="color:#CDBBA8;margin:0">© 2026 管理者PAPA</p>
+  </div>
+</footer>
+</body>
+</html>
